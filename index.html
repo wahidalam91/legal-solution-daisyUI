@@ -1,43 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solutions</title>
     <!-- Font Link -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- TailwindCSS and DaisyUI CDN -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awsome CDN -->
-     <script src="https://kit.fontawesome.com/dd610be577.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dd610be577.js" crossorigin="anonymous"></script>
 
 
     <style>
-        .font-poppins{
+        .font-poppins {
             font-family: "Poppins", sans-serif;
         }
 
-        .font-eb-garamond{
+        .font-eb-garamond {
             font-family: "EB Garamond", serif;
         }
 
-        .legal-bg-primary{
+        .legal-bg-primary {
             background-color: #B68C5A;
         }
 
-        .legal-description-text{
+        .legal-bg-secondary {
+            background-color: #F3F3F3;
+        }
+
+        .legal-description-text {
             color: #707070;
         }
     </style>
 </head>
-<body>
-    <header class="max-w-6xl mx-auto mb-28">
 
+<body class="font-poppins">
+    <header class="max-w-6xl mx-auto mb-28">
+        <!-- Nav Section -->
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm my-10">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a><img src="./images/logo2.png" alt="logo"></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 legal-description-text font-medium space-x-4">
+                        <li><a>Home</a></li>
+                        <li><a>Services <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                        <li><a>Cases <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                        <li><a>Blog <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                        <li><a>Contact Us <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn legal-bg-primary text-white">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Section -->
+         <div class="banner">
+            <div class="hero lg:h-[550px]" style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="lg:w-3/4 mx-auto">
+                <h1 class="lg:w-6/10 lg:mx-auto mb-5 text-5xl font-extrabold font-eb-garamond leading-[56px]">We Provide Effective Legal Solutions</h1>
+                <p class="lg:w-3/4 lg:mx-auto mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="search-box flex justify-center items-center gap-4">
+                    <div class="search-field">
+                        <input class="p-4 border-0 legal-description-text rounded w-[200px] h-[40px] lg:h-[64px] lg:w-[500px] bg-base-100" type="text" placeholder="Search your services">
+                    </div>
+                    <div class="search-btn">
+                        <a class="btn border-0 legal-bg-primary text-[20px] text-white lg:w-[150px] h-[40px] lg:h-[64px]">Search</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+         </div>
     </header>
 
     <main class="max-w-6xl mx-auto mb-28">
@@ -48,4 +113,5 @@
 
     </footer>
 </body>
+
 </html>
